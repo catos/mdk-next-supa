@@ -92,11 +92,14 @@ function Recipes() {
 
 
   return (
-    <ul>
-      {recipes.map(recipe =>
-        <li key={recipe.id}>{recipe.id} - {recipe.name} - {recipe.time}</li>
-      )}
-    </ul>
+    <div>
+      <h2>Recipes</h2>
+      <ul>
+        {recipes.map(recipe =>
+          <li key={recipe.id}>{recipe.id} - {recipe.name} - {recipe.time}</li>
+        )}
+      </ul>
+    </div>
   )
 
 }
